@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-wdith, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="area">
+        <div id="screen">0</div>
+        <div id="buttons">
+            <div class="line-1">
+                <input type="button" class="gray" value="AC" onclick="()">
+                <input type="button" class="gray" value="()" onclick="printar()">
+                <input type="button" class="gray" value="%" onclick="()">
+                <input type="button" class="orange" value="/" onclick="dividir()">
+            </div>
+            <div class="line-2">
+                <input type="button" value="1" name="number" onclick="printar()">
+                <input type="button" value="2" name="number" onclick="printar()">
+                <input type="button" value="3" name="number" onclick="printar()">
+                <input type="button" class="orange" value="x" onclick="multiplicar()">
+            </div>
+            <div class="line-3">
+                <input type="button" value="4" name="number" onclick="printar()">
+                <input type="button" value="5" name="number" onclick="printar()">
+                <input type="button" value="6" name="number" onclick="printar()">
+                <input type="button" class="orange" value="-" onclick="subtrair()">
+            </div>
+            <div class="line-4">
+                <input type="button" value="7" name="number" onclick="printar()">
+                <input type="button" value="8" name="number" onclick="printar()">
+                <input type="button" value="9" name="number" onclick="printar()">
+                <input type="button" class="orange" value="+" onclick="somar()">
+            </div>
+            <div class="line-5">
+                <input type="button" value="0" onclick="printar()">
+                <input type="button" value="," onclick="printar()">
+                <input type="button" value="del" onclick="()">
+                <input type="button" class="orange" value="=" onclick="resultado()">
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    var n1 = window.document.getElementsByName('number')
+    screen.addEvenListener('click', printar)
+    function printar() {
+        var screen = window.document.getElementById('screen')
+        screen.innerText = n1
+    }
+</script>
+</html>
