@@ -7,35 +7,27 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div id="area">
-        <div id="screen">0</div>
-        <div id="buttons">
+    <div id="calculator">
+        <div id="display">0</div>
+        <div id="keys">
             <div class="line-1">
-                <input type="button" class="gray" value="AC" onclick="()">
-                <input type="button" class="gray" value="()" onclick="printar()">
-                <input type="button" class="gray" value="%" onclick="()">
-                <input type="button" class="orange" value="/" onclick="dividir()">
-            </div>
-            <div class="line-2">
-                <input type="button" value="1" name="number" onclick="printar()">
-                <input type="button" value="2" name="number" onclick="printar()">
-                <input type="button" value="3" name="number" onclick="printar()">
-                <input type="button" class="orange" value="x" onclick="multiplicar()">
-            </div>
-            <div class="line-3">
-                <input type="button" value="4" name="number" onclick="printar()">
-                <input type="button" value="5" name="number" onclick="printar()">
-                <input type="button" value="6" name="number" onclick="printar()">
-                <input type="button" class="orange" value="-" onclick="subtrair()">
-            </div>
-            <div class="line-4">
-                <input type="button" value="7" name="number" onclick="printar()">
-                <input type="button" value="8" name="number" onclick="printar()">
-                <input type="button" value="9" name="number" onclick="printar()">
-                <input type="button" class="orange" value="+" onclick="somar()">
-            </div>
-            <div class="line-5">
-                <input type="button" value="0" onclick="printar()">
+                <button class="gray">AC</button>
+                <button class="gray">()</button>
+                <button class="gray">%</button>
+                <button class="orange">/</button>
+                <button>1</button>
+                <button>2</button>
+                <button>3</button>
+                <button class="orange">x</button>
+                <button>4</button>
+                <button>5</button>
+                <button>6</button>
+                <button class="orange">-</button> 
+                <button>7</button>
+                <button>value="8" name="number" onclick="printar()"></button>
+                <button>value="9" name="number" onclick="printar()"></button>
+                <button>class="orange" value="+" onclick="somar()"></button>
+                <button>0</button>
                 <input type="button" value="," onclick="printar()">
                 <input type="button" value="del" onclick="()">
                 <input type="button" class="orange" value="=" onclick="resultado()">

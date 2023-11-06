@@ -2,7 +2,7 @@ body {
     display: flex;
     justify-content: center;
 }
-div#area {
+div#calculator {
     background: black;
     width: 200px;
     height: 380px;
@@ -12,7 +12,7 @@ div#area {
     align-items: center;
     padding: 10px;
 }
-div#screen {
+div#display {
     width: 180px;
     height: 110px;
     display: block;
@@ -21,7 +21,10 @@ div#screen {
     font: normal 40px Arial;
     text-align: right;
 }
-div#buttons > div {
+div#keys {
+    display: grid;
+}
+div#keys > div {
     margin: 5px auto;
     padding: 0px 10px;
 }
